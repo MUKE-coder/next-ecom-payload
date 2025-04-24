@@ -61,7 +61,7 @@ export const FormBlock: React.FC<
         loadingTimerID = setTimeout(() => {
           setIsLoading(true)
         }, 1000)
-
+        console.log(dataToSend, data)
         try {
           const req = await fetch(`${getClientSideURL()}/api/form-submissions`, {
             body: JSON.stringify({
